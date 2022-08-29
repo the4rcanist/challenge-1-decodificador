@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--titulo do projeto-->
+  <title>Decodificador de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--seção onde vai os botões e o input de texto-->
+  <main class="main-div">
+
+    <!--logo-gato-->
+    <img src="https://img.icons8.com/dotty/80/000000/pixel-cat.png" class="logo-gato" onclick="home()"> 
+
+    <section class="div-principal">
+
+      <form action="">    
+
+        <textarea class="text-input" id="input-texto" type="text" name="input-texto" maxlength="200" placeholder="Digite seu segredo aqui"></textarea>
+        <!--alerta-->
+        <div class="alerta">
+            <img src="imagens/Thumbnails-241.png" width="50px" height="50px" class="img-alerta">
+          <label for="input-texto">digite apenas letras minúsculas e sem acento.</label>
+        </div>
+
+        <!--botoes-->
+        <div class="grupo-botoes">
+          <input class="btn-criptografar" type="submit" value="Criptografar |" id="btn-criptografar" >
+          <input class="btn-descriptografar" type="submit" value="Descriptografar |" id="btn-descriptografar">
+        </div>
+
+      </form>
+
+    </section>
+<!--seção onde vai os botões e o input de texto-->
+
+    <section class="message-box">
+      <div id="div-desaparece" class="message-box-div">
+        <img src="imagens/Thumbnails-88.png" width="50px" height="100px" class="box-img"> 
+        <h2>Nenhuma mensagem encontrada na Net</h2>
+        <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+        
+      </div>      
+      
+      <div id="div-aparece">
+        <textarea class="div-mensagem" type="text" id="mensagem" placeholder="Nenhuma mensagem ainda"></textarea>
+        <input class="botao-copiar" type="submit" value="Copiar" id="botao-copiar">
+      </div>
+    </section>
+  </main>
+
+  <!--Footer com informações-->
+  <footer class="footer">
+    <p>Desenvolvido por Mary Pamplona - ícones pertencem à <a href="https://cdprojektred.com/en/">cdpr</a> - 2022</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
